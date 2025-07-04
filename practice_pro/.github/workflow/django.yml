@@ -17,6 +17,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+      - name: Makemigrations DB
+        run: python manage.py makemigrations
       - name: Migrate DB
         run: python manage.py migrate
       - name: Run Tests
