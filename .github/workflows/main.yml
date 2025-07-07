@@ -20,8 +20,10 @@ jobs:
     
     - name: Install dependencies
       run: |
+        cd practice_pro
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        cd ..
         
     - name: Run tests
       run: |
