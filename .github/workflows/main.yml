@@ -27,4 +27,6 @@ jobs:
         
     - name: Run tests
       run: |
+        cd practice_pro
         python manage.py test
+        cd ..
